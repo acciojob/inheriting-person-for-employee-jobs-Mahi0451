@@ -13,7 +13,7 @@ function Employee(name, age, jobTitle) {
 }
 
 Employee.prototype = Object.create(Person.prototype);
-Employe.prototype.constructor = Employee;
+Employee.prototype.constructor = Employee;
 
 
 Employee.prototype.jobGreet = function(){
