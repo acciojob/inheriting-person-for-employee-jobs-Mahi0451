@@ -11,10 +11,10 @@ function Employee(name, age, jobTitle) {
 	this.jobTitle = jobTitle;
 }
 
-// Employee.prototype = Object.create(Person.prototype);
-// Employee.prototype.constructor = Employee;
+Employee.prototype = object.create(Person.prototype);
+Employee.prototype.constructor = Employee;
 
-Employee.prototype.__proto__ = Person.prototype;
+// Employee.prototype.__proto__ = Person.prototype;
 
 
 Employee.prototype.jobGreet = function(){
