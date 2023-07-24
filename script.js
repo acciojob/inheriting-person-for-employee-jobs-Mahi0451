@@ -11,7 +11,9 @@ function Employee(name, age, jobTitle) {
 	Person.call(this, name, age);
 	this.jobTitle = jobTitle;
 }
-Employee.prototype.__proto__ = person.prototype;
+
+Employee.prototype = Object.create(Person.prototype);
+Employe.prototype.constructor = Employee;
 
 
 Employee.prototype.jobGreet = function(){
