@@ -28,5 +28,3 @@ person.greet();
 const employee = new Employee('Jane', 40, 'Manager');
 employee.greet();
 employee.jobGreet();
-
-
